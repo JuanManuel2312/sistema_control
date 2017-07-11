@@ -31,19 +31,7 @@ public class FrmIniciarSesion extends javax.swing.JFrame {
 
     public FrmIniciarSesion() {
         initComponents();
-        setLocationRelativeTo(null);
-        Shape forma= new RoundRectangle2D.Double(0,0,this.getBounds().width,this.getBounds().height,27,27);
-        AWTUtilities.setWindowShape(this, forma);
-        ((JPanel) getContentPane()).setOpaque(false);
-        ImageIcon uno = new ImageIcon(this.getClass().getResource("/Imagenes/fondoLogin.png"));
-        JLabel fondo = new JLabel();
-        fondo.setIcon(uno);
-        getLayeredPane().add(fondo, JLayeredPane.FRAME_CONTENT_LAYER);
-        //fondo.setBounds(0,0,uno.getIconWidth(),uno.getIconHeight());
-        fondo.setBounds(0, 0, 708, 340);
-        fondo.setBorder(BorderFactory.createMatteBorder(3,3,3,3,Color.BLACK));
-        txtUsuarios.requestFocus();
-        lblRuta.setVisible(false);
+        
     }
 
     @Override
